@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-1ZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9s+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <script src="./script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="title">Student Registration Form
+        </div>
+        <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSeX7DUTsx7WwMQPYPhrtTjkFqabDaMEhLOzVxNMSS_kXDSJIg/formResponse"
+            target="_self" method="post">
+            <div class="form">
+
+                <div class="inputfield">
+                    <label>First Name</label>
+                    <input type="text" class="input" id="name" name="entry.862340632" placeholder="Enter first name"
+                        maxlength="30" pattern="[A-Za-z]{1,32}" title="Enter only alphabets">
+                </div>
+
+                <div class="inputfield">
+                    <label>Last Name</label>
+                    <input type="text" class="input" id="name" name="entry.76955793" placeholder="Enter last name"
+                        maxlength="30" pattern="[A-Za-z]{1,32}" title="Enter only alphabets">
+                </div>
+
+                <div class="inputfield" id="gender">
+                    <label for="">Gender</label>
+                    <select id="state" name="entry.2047170856">
+                        <option value="">--Select your Gender--</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="inputfield">
+                    <label for="">Age</label>
+                    <input type="text" class="input" name="entry.722115569" placeholder="Enter your age" maxlength="2"
+                        pattern="^[0-9]{2}$" placeholder="Enter your age" title="Enter numbers only">
+                </div>
+
+                <div class="inputfield">
+                    <label for="">Date of Birth</label>
+                    <input type="date" class="input" name="entry.639834850">
+                </div>
+
+                <div class="inputfield">
+                    <label>Email Address</label>
+                    <input type="email" class="input" name="entry.464214668" placeholder="Enter your email"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,63}$">
+                </div>
+
+                <div class="inputfield">
+                    <label>SEE Marks</label>
+                    <input type="text" class="input" name="entry.91828073" placeholder="Enter your SEE marks" maxlength="3">
+                </div>
+
+                <div class="inputfield">
+                    <label>School Name</label>
+                    <input type="text" class="input" name="entry.1859624671" placeholder="Enter your school name"
+                        maxlength="50" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$">
+                </div>
+
+                <p id="message"></p>
+
+                <div class="inputfield">
+                    <label for="">Phone Number</label>
+                    <div class="custom-select" id="phone-codes">
+                        <select id="phone-code">
+                            <option value="+977">+977</option>
+                        </select>
+                    </div>
+                    <input type="tel" class="input" name="entry.628688885" maxlength="10" id="phone-number"
+                        placeholder="Enter your phone number" pattern="[7-9]{1}[0-9]{9}"
+                        title="Please enter valid phone number">
+                </div>
+
+                <div class="inputfield">
+                    <label>Permanent Address</label>
+                    <textarea class="textarea" name="entry.1051508565" id="" cols="30" rows="5" placeholder="Enter your address"
+                        pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$" maxlength="100"></textarea>
+                </div>
+
+                <div class="inputfield">
+                    <label>State</label>
+                    <div class="custom_select">
+                        <select id="state" name="entry.804230491">
+                            <option value="">--Select your state--</option>
+                            <option value="Province No.1">Province No.1</option>
+                            <option value="Madhesh Pradesh">Province No.2</option>
+                            <option value="Bagmati Pradesh">Province No.3</option>
+                            <option value="Gandaki Pradesh">Province No.4</option>
+                            <option value="Lumbini Pradesh">Province No.5</option>
+                            <option value="Karnali Pradesh">Province No.6</option>
+                            <option value="Suddurpaschim Pradesh">Province No.7</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="inputfield">
+                    <label>Faculty</label>
+                    <input type="text" class="input" name="entry.1185638987" placeholder="Enter your faculty" maxlength="50"
+                        pattern="^[a-zA-Z][a-zA-Z0-9-_.]{5,12}$">
+                </div>
+
+                <div class="inputfield" id="hobbies">
+                    <label for="">Hobbies</label>
+                    <select id="state" name="entry.982842594">
+                        <option value="">--Select your Hobby--</option>
+                        <option value="Music">Music</option>
+                        <option value="Study">Study</option>
+                        <option value="Sports">Sports</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+
+                <!-- <div class="inputfield">
+                    <label>Upload Photo</label>
+                    <p id="file-size">*Max size 100kb.</p>
+                    <input type="file" name="myfile" id="myfile" placeholder="Upload your photo" rows="7" />
+
+                </div> -->
+
+                <!-- <div class="inputfield terms">
+                    <label class="check">
+                        <input type="checkbox" name="check" value="Declared">
+                        <span class="checkmark"></span>
+                    </label>
+                    <p>I hereby declare that the above information provided is true and correct.</p>
+                </div>
+
+                <div class="inputfield">
+                    <div data-netlify-recaptcha="true"></div>
+                </div> -->
+                <div class="inputfield btns" id="btn">
+                    <button type="submit" value="Register" class="btn" onclick="checkPassword()">Register</button>
+                    <button type="reset" value="Reset" class="btn">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
